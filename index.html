@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBBMAQ - Assistência Técnica de Eletrodomésticos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sombra-destaque {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        /* Cores personalizadas */
+        .bg-custom-dark-blue { background-color: #0b1320; }
+        .text-custom-dark-blue { color: #0b1320; }
+        .bg-custom-off-white { background-color: #f3f6fa; }
+        .hover\:bg-custom-off-white-dark:hover { background-color: #e5e9f0; }
+        .bg-custom-icon-blue { background-color: #b9dfff; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-custom-off-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- SUA LOGO AQUI -->
+            <img src="L2.png" alt="Logo ROBBMAQ Assistência Técnica" class="h-12 md:h-14" onerror="this.onerror=null;this.src='https://placehold.co/250x60/ffffff/00aeff?text=ROBBMAQ';">
+            
+            <a href="#contato" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg flex items-center transition-transform transform hover:scale-105">
+                <i data-lucide="whatsapp" class="mr-2 h-5 w-5"></i>
+                <span class="hidden sm:inline">Contato Rápido</span>
+                <span class="sm:hidden">Contato</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <section class="bg-custom-dark-blue text-white text-center py-20 px-6">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Seu Eletrodoméstico Quebrou?</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Soluções rápidas e eficientes para geladeiras, lavadoras, freezers e micro-ondas. Atendimento profissional na sua casa.</p>
+                <a href="#servicos" class="bg-custom-off-white text-custom-dark-blue font-bold py-3 px-8 rounded-lg text-lg hover:bg-custom-off-white-dark transition-transform transform hover:scale-105">
+                    Conheça os Serviços
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="py-16 sm:py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Serviço 1: Refrigeração -->
+                    <div class="bg-custom-off-white p-8 rounded-xl sombra-destaque text-center transform hover:-translate-y-2 transition-transform">
+                        <div class="bg-custom-icon-blue rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="snowflake" class="text-sky-800 h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Refrigeração</h3>
+                        <p class="text-gray-600">Conserto de geladeiras e freezers de todas as marcas e modelos. Diagnóstico preciso.</p>
+                    </div>
+                    <!-- Serviço 2: Lavadoras -->
+                    <div class="bg-custom-off-white p-8 rounded-xl sombra-destaque text-center transform hover:-translate-y-2 transition-transform">
+                        <div class="bg-custom-icon-blue rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="shirt" class="text-sky-800 h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Lavadoras</h3>
+                        <p class="text-gray-600">Manutenção e reparo em máquinas de lavar. Suas roupas limpas sem dor de cabeça.</p>
+                    </div>
+                    <!-- Serviço 3: Freezer -->
+                    <div class="bg-custom-off-white p-8 rounded-xl sombra-destaque text-center transform hover:-translate-y-2 transition-transform">
+                         <div class="bg-custom-icon-blue rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="thermometer-snowflake" class="text-sky-800 h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Freezers</h3>
+                        <p class="text-gray-600">Especialista em freezers horizontais e verticais. Preserve seus alimentos com segurança.</p>
+                    </div>
+                    <!-- Serviço 4: Micro-ondas -->
+                    <div class="bg-custom-off-white p-8 rounded-xl sombra-destaque text-center transform hover:-translate-y-2 transition-transform">
+                        <div class="bg-custom-icon-blue rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="microwave" class="text-sky-800 h-10 w-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Micro-ondas</h3>
+                        <p class="text-gray-600">Reparo de micro-ondas que não esquenta, não liga ou com prato sem girar. Rápido e seguro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção "Por que escolher?" -->
+        <section class="bg-gray-100 py-16 sm:py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Por Que Me Escolher?</h2>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex items-start">
+                        <i data-lucide="shield-check" class="text-green-500 h-8 w-8 mr-4 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg">Serviço com Garantia</h3>
+                            <p class="text-gray-600">Qualidade e confiança no reparo do seu eletrodoméstico.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-lucide="dollar-sign" class="text-green-500 h-8 w-8 mr-4 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg">Preço Justo</h3>
+                            <p class="text-gray-600">Orçamento transparente e sem surpresas na hora de pagar.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i data-lucide="wrench" class="text-green-500 h-8 w-8 mr-4 flex-shrink-0 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-lg">Técnico Qualificado</h3>
+                            <p class="text-gray-600">Anos de experiência para oferecer a melhor solução para você.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="bg-custom-dark-blue text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Precisa de um Orçamento?</h2>
+                <p class="text-lg mb-8">Entre em contato agora mesmo. Estou pronto para te ajudar!</p>
+                
+                <a href="https://w.app/robbmaq" 
+                   target="_blank" 
+                   class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg inline-flex items-center transition-transform transform hover:scale-105 mb-4">
+                    <i data-lucide="whatsapp" class="mr-3 h-6 w-6"></i>
+                    Chamar no WhatsApp
+                </a>
+                
+                <p class="mt-4 text-lg">Ou ligue: <a href="tel:+5511943566616" class="font-bold underline hover:text-gray-300">(11) 94356-6616</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Robson | Técnico de Eletrodomésticos. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Atendendo em Taboão da Serra - SP e Região</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
